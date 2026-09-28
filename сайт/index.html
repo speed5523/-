@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ставрида — рыболовный магазин</title>
+  <meta name="description" content="Рыболовный магазин «Ставрида»: удилища и спиннинги, катушки, лески и шнуры, приманки, оснастка, прикормка, экипировка и аксессуары. Самовывоз и доставка по России.">
+  <meta name="theme-color" content="#9ECF77">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Шапка -->
+  <header class="header" id="header">
+    <div class="container header__in">
+      <a class="brand" href="#top" aria-label="Ставрида — на главную">
+        <img class="brand__logo" src="img/logo.svg" alt="" width="46" height="46">
+        <span class="brand__name">Ставрида</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#catalog">Каталог</a>
+        <a href="#categories">Категории</a>
+        <a href="#about">О магазине</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+        <a class="nav__phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" href="tel:+79000000000">+7 (900) 000-00-00</a>
+        <button class="icon-btn" id="cartBtn" type="button" aria-label="Корзина пуста" aria-controls="cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/>
+            <path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>
+          </svg>
+          <span class="cart-btn__count" id="cartCount" aria-hidden="true">0</span>
+        </button>
+        <button class="icon-btn burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Первый экран -->
+    <section class="hero" id="top">
+      <div class="container hero__in">
+        <div class="hero__text">
+          <p class="eyebrow">Рыболовный магазин</p>
+          <h1>Всё для рыбалки&nbsp;— от удочки <em>до последнего крючка</em></h1>
+          <p class="lead">Удилища, катушки, лески, приманки, прикормка и экипировка. Подберём снасть под ваш водоём, рыбу и бюджет — и расскажем, как ей ловить.</p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#catalog">
+              Перейти в каталог
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contacts">Подобрать снасть</a>
+          </div>
+          <ul class="hero__facts">
+            <li><b>8 разделов</b>от удилищ до эхолотов</li>
+            <li><b>от 3 000 ₽</b>доставка по городу бесплатно</li>
+            <li><b>14 дней</b>на обмен и возврат</li>
+          </ul>
+        </div>
+
+        <div class="hero__art">
+          <div class="hero__ring" aria-hidden="true"></div>
+          <img src="img/logo.svg" alt="Логотип «Ставрида»: рыбак с удочкой вытаскивает рыбу" width="440" height="424">
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="perks" aria-label="Почему у нас">
+      <div class="container perks__in">
+        <div class="perk">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 18c4-7 14-9 20-3l7-5v16l-7-5c-6 6-16 4-20-3Z"/><circle cx="10" cy="17" r="1"/></svg>
+          <div><b>Подберём снасть</b><span>Под водоём, рыбу и бюджет</span></div>
+        </div>
+        <div class="perk">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 4l11 4.5v8.5c0 7-4.6 11.6-11 14-6.4-2.4-11-7-11-14V8.5L18 4Z"/><path d="m13 18 3.5 3.5L23.5 14"/></svg>
+          <div><b>Проверяем товар</b><span>Перед выдачей и отправкой</span></div>
+        </div>
+        <div class="perk">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M3 9h19v15H3zM22 14h6l5 5v5H22"/><circle cx="9" cy="26" r="2.6"/><circle cx="27" cy="26" r="2.6"/></svg>
+          <div><b>Доставка по России</b><span>Курьер, СДЭК, Почта</span></div>
+        </div>
+        <div class="perk">
+          <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M6 18a12 12 0 1 0 3.6-8.6"/><path d="M6 5v6h6"/></svg>
+          <div><b>Обмен и возврат</b><span>14 дней без лишних вопросов</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Категории</p>
+          <h2>Снасти на любой <em>водоём</em></h2>
+          <p>От первой поплавочной удочки до карпового арсенала — выберите раздел, и мы покажем, что есть в наличии.</p>
+        </div>
+        <div class="cat-grid reveal" id="catGrid"></div>
+      </div>
+    </section>
+
+    <!-- Каталог -->
+    <section class="section" id="catalog" style="padding-top: 0">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <p class="eyebrow">Каталог</p>
+            <h2 id="catalogTitle">Популярные товары</h2>
+            <p id="resultInfo" aria-live="polite"></p>
+          </div>
+          <div class="toolbar">
+            <label class="search">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+              <input type="search" id="search" placeholder="Воблер, шнур, сапоги…" aria-label="Поиск по каталогу" autocomplete="off">
+            </label>
+            <div class="select">
+              <select id="sort" aria-label="Сортировка">
+                <option value="popular">Сначала популярные</option>
+                <option value="cheap">Сначала дешевле</option>
+                <option value="expensive">Сначала дороже</option>
+                <option value="sale">Сначала со скидкой</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="chips" id="chips" role="group" aria-label="Фильтр по разделам"></div>
+        <div class="product-grid" id="productGrid"></div>
+
+        <noscript><p class="empty">Чтобы увидеть каталог и пользоваться корзиной, включите JavaScript в браузере.</p></noscript>
+      </div>
+    </section>
+
+    <!-- Сезонная подборка (текст меняется по месяцу в js/main.js) -->
+    <section class="season" aria-label="Сезонная подборка">
+      <div class="container">
+        <div class="season__card reveal">
+          <div>
+            <p class="eyebrow" id="seasonEyebrow">Сейчас сезон · осень</p>
+            <h2 id="seasonTitle">Осенний жор: щука выходит на охоту</h2>
+            <p id="seasonText">Хищник активно кормится перед зимой. Воблеры, силикон и блёсны работают как никогда — самое время обновить коробку с приманками.</p>
+            <button class="btn btn--green" id="seasonBtn" type="button" data-cat="lures">Смотреть приманки</button>
+          </div>
+          <div class="season__art" id="seasonArt" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О магазине -->
+    <section class="section about" id="about">
+      <div class="container about__in">
+        <div class="about__art reveal">
+          <img src="img/fisherman.svg" alt="Рыбак с удочкой — рисунок из логотипа «Ставриды»" width="262" height="200">
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">О магазине</p>
+          <h2>Магазин, который открыли <em>рыболовы</em></h2>
+          <p>«Ставрида» начиналась с простой идеи: продавать только те снасти, которыми мы ловим сами. Поэтому за прилавком вам не будут читать каталог — расскажут, какой спиннинг взять под джиг на реке, чем кормить леща в августе и почему не стоит экономить на шнуре.</p>
+          <p>Заходите посоветоваться, даже если пока ничего не собираетесь покупать. Намотаем леску, соберём оснастку и покажем пару надёжных узлов.</p>
+          <div class="stats">
+            <div><b>0 ₽</b><span>намотка шнура и сборка оснастки</span></div>
+            <div><b>14 дней</b><span>на обмен и возврат</span></div>
+            <div><b>7/7</b><span>работаем без выходных</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Доставка и оплата -->
+    <section class="section" id="delivery">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Доставка и оплата</p>
+          <h2>Заберите сегодня или получите <em>у двери</em></h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info reveal">
+            <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="shop"></svg>
+            <h3>Самовывоз</h3>
+            <p>Бесплатно, из магазина на ул.&nbsp;Рыбацкой,&nbsp;12.</p>
+            <ul>
+              <li>Соберём заказ за 30 минут</li>
+              <li>Проверим снасть при вас</li>
+              <li>Хранение — 5 дней</li>
+            </ul>
+          </article>
+          <article class="info reveal">
+            <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="truck"></svg>
+            <h3>Курьер по городу</h3>
+            <p>300 ₽, а при заказе от 3 000 ₽ — бесплатно.</p>
+            <ul>
+              <li>На следующий день</li>
+              <li>Удобный интервал — 3 часа</li>
+              <li>Оплата при получении</li>
+            </ul>
+          </article>
+          <article class="info reveal">
+            <svg class="ico" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-icon="parcel"></svg>
+            <h3>По всей России</h3>
+            <p>СДЭК или Почта России — по тарифу перевозчика.</p>
+            <ul>
+              <li>Отправка в течение дня</li>
+              <li>Срок — от 2 до 7 дней</li>
+              <li>Трек-номер в SMS</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="note reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.5"/></svg>
+          <span>Оплатить можно картой, по СБП или наличными в магазине. Обмен и возврат — 14 дней, если товар не был в использовании и сохранил упаковку.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Контакты и заявка -->
+    <section class="section" id="contacts" style="padding-top: 0">
+      <div class="container contacts__in">
+        <div class="reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2>Заходите <em>за советом</em></h2>
+          <p class="lead">Расскажите, где и кого собираетесь ловить, — поможем собрать снасть под задачу и бюджет. Можно зайти, позвонить или написать.</p>
+
+          <ul class="contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <div><b>Адрес</b>ул.&nbsp;Рыбацкая,&nbsp;12</div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+              <div><b>Часы работы</b>Пн–Пт 9:00–20:00, Сб–Вс 6:00–20:00 — успеете до утреннего клёва</div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1"/></svg>
+              <div><b>Телефон</b><a href="tel:+79000000000">+7 (900) 000-00-00</a></div>
+            </li>
+          </ul>
+
+          <div class="messengers">
+            <a href="#" aria-label="Написать в Telegram">Telegram</a>
+            <a href="#" aria-label="Написать в WhatsApp">WhatsApp</a>
+            <a href="#" aria-label="Группа ВКонтакте">ВКонтакте</a>
+          </div>
+        </div>
+
+        <form class="form reveal" id="callbackForm" novalidate>
+          <h3>Подобрать снасть</h3>
+          <p>Оставьте телефон — перезвоним в течение 15 минут в рабочее время.</p>
+          <label class="field">
+            <span>Имя</span>
+            <input name="customer" autocomplete="name" placeholder="Как к вам обращаться" required>
+          </label>
+          <label class="field">
+            <span>Телефон</span>
+            <input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+          </label>
+          <label class="field">
+            <span>Что планируете ловить</span>
+            <textarea name="message" placeholder="Например: щука на реке с берега, бюджет до 10 000 ₽"></textarea>
+          </label>
+          <button class="btn btn--primary btn--block" type="submit">Жду звонка</button>
+          <small>Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</small>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__in">
+        <div>
+          <a class="brand" href="#top" aria-label="Ставрида — наверх">
+            <img class="brand__logo" src="img/logo.svg" alt="" width="46" height="46">
+            <span class="brand__name">Ставрида</span>
+          </a>
+          <p class="footer__about">Рыболовный магазин: удилища, катушки, снасти, приманки и всё, что пригодится на воде.</p>
+        </div>
+        <div>
+          <h4>Каталог</h4>
+          <ul>
+            <li><a href="#catalog" data-cat="rods">Удилища и спиннинги</a></li>
+            <li><a href="#catalog" data-cat="reels">Катушки</a></li>
+            <li><a href="#catalog" data-cat="line">Лески и шнуры</a></li>
+            <li><a href="#catalog" data-cat="lures">Приманки</a></li>
+            <li><a href="#catalog" data-cat="gear">Экипировка</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Покупателям</h4>
+          <ul>
+            <li><a href="#delivery">Доставка и оплата</a></li>
+            <li><a href="#delivery">Обмен и возврат</a></li>
+            <li><a href="#about">О магазине</a></li>
+            <li><a href="#contacts">Подобрать снасть</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Контакты</h4>
+          <ul>
+            <li><a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+            <li>ул.&nbsp;Рыбацкая,&nbsp;12</li>
+            <li>Ежедневно, в выходные — с 6:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> «Ставрида». Все права защищены.</span>
+        <span>Информация на сайте не является публичной офертой</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Корзина -->
+  <div class="drawer" id="cart" aria-hidden="true" inert>
+    <div class="drawer__backdrop" data-close-cart></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="drawer__head">
+        <h3 id="cartTitle">Корзина</h3>
+        <button class="close-btn" type="button" data-close-cart aria-label="Закрыть корзину">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <div class="drawer__body" id="cartBody"></div>
+      <div class="drawer__foot" id="cartFoot" hidden>
+        <p class="drawer__ship" id="shipText"></p>
+        <div class="ship-bar" aria-hidden="true"><i id="shipBar"></i></div>
+        <div class="total"><span id="cartTotalLabel">Итого</span><b id="cartTotal">0 ₽</b></div>
+        <button class="btn btn--primary btn--block" id="checkoutBtn" type="button">Оформить заказ</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Модальное окно: карточка товара / оформление заказа -->
+  <div class="modal" id="modal" inert>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-btn modal__close" type="button" data-close-modal aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Уведомление -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>
+    <span id="toastText"></span>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
